@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7389fc4-4a1d-498f-83d3-29ef83d8541d" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/src/main/java/Canvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VistaSeleccionar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/InputsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InputsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/VentanaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VistaPrincipal.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Coordenadas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coordenadas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Movimiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Accion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/VistaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VistaPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MoverseIzquierda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Desplazamiento.java" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,23 +72,17 @@
       <command value="gradle " />
     </option>
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gonza\OneDrive\Documents\GitHub\Mortal-Fighter\src\main\java" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Unnamed">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="Prototipo.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -185,11 +187,29 @@
       <updated>1622934310799</updated>
       <workItem from="1622934314870" duration="157000" />
       <workItem from="1622934514157" duration="53000" />
+<<<<<<< Updated upstream
       <workItem from="1622935065685" duration="951000" />
+=======
+      <workItem from="1622935065685" duration="160000" />
+      <workItem from="1623103171066" duration="1621000" />
+      <workItem from="1623168889111" duration="1847000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
