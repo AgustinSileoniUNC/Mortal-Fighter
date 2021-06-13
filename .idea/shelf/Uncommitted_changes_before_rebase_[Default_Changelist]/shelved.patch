@@ -1,0 +1,329 @@
+Index: src/main/java/Personaje.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import Modelo.Coordenadas;\r\nimport Modelo.Movimiento;\r\n\r\nimport java.awt.*;\r\n\r\npublic class Personaje {\r\n\r\n    private static final int WIDTH = 60;\r\n    private static final int HEIGHT = 10;\r\n    private static int y= 330;\r\n    private Coordenadas coordenadas;\r\n    int xa = 0;\r\n    int life;\r\n    Color color;\r\n\r\n    public Personaje(Coordenadas coordenadas, Color color){\r\n        life = 100;\r\n        this.coordenadas = coordenadas;\r\n    }\r\n\r\n    void move() {\r\n        if(coordenadas.getX() + xa > 0 & coordenadas.getX() + xa < 1000 - WIDTH){\r\n            coordenadas.setX(coordenadas.getX() + xa);\r\n        }\r\n    }\r\n\r\n\r\n    void moverDerecha(){\r\n        getCoordenadas().setX(getCoordenadas().getX()+1);\r\n    }\r\n    void moverIzquierda(){\r\n        getCoordenadas().setX(getCoordenadas().getX()-1);\r\n    }\r\n    void noMover(){\r\n        xa=0;\r\n    }\r\n\r\n    public Rectangle getBounds(){\r\n\r\n        return new Rectangle(coordenadas.getX(),y,WIDTH, HEIGHT);\r\n    }\r\n\r\n    public int getTopY(){\r\n        return y;\r\n    }\r\n\r\n    public void paint(Graphics2D g){\r\n        y = 360 - 30;\r\n        g.fillRect( coordenadas.getX() , y ,WIDTH ,HEIGHT );\r\n        g.setColor(color);\r\n    }\r\n\r\n    public Coordenadas getCoordenadas(){\r\n        return coordenadas;\r\n    }\r\n\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Personaje.java b/src/main/java/Personaje.java
+--- a/src/main/java/Personaje.java	(revision 9acceae01bd89b66e66ceef303c11319bf930822)
++++ b/src/main/java/Personaje.java	(date 1623605518889)
+@@ -11,6 +11,7 @@
+     private Coordenadas coordenadas;
+     int xa = 0;
+     int life;
++    protected int dañoAtaque;
+     Color color;
+ 
+     public Personaje(Coordenadas coordenadas, Color color){
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+deleted file mode 100644
+--- a/.idea/workspace.xml	(revision 9acceae01bd89b66e66ceef303c11319bf930822)
++++ /dev/null	(revision 9acceae01bd89b66e66ceef303c11319bf930822)
+@@ -1,215 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="AutoImportSettings">
+-    <option name="autoReloadType" value="SELECTIVE" />
+-  </component>
+-  <component name="ChangeListManager">
+-    <list default="true" id="e7389fc4-4a1d-498f-83d3-29ef83d8541d" name="Default Changelist" comment="">
+-<<<<<<< Updated upstream
+-      <change beforePath="$PROJECT_DIR$/src/main/java/Canvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VistaSeleccionar.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/InputsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InputsController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/VentanaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VistaPrincipal.java" afterDir="false" />
+-=======
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Coordenadas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coordenadas.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Movimiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Accion.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/VistaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VistaPrincipal.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/MoverseIzquierda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Desplazamiento.java" afterDir="false" />
+->>>>>>> Stashed changes
+-    </list>
+-    <option name="SHOW_DIALOG" value="false" />
+-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+-    <option name="LAST_RESOLUTION" value="IGNORE" />
+-  </component>
+-  <component name="ExternalProjectsData">
+-    <projectState path="$PROJECT_DIR$">
+-      <ProjectState />
+-    </projectState>
+-  </component>
+-  <component name="ExternalProjectsManager">
+-    <system id="GRADLE">
+-      <state>
+-        <task path="$PROJECT_DIR$">
+-          <activation />
+-        </task>
+-        <task path="">
+-          <activation />
+-        </task>
+-        <projects_view>
+-          <tree_state>
+-            <expand>
+-              <path>
+-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+-                <item name="Prototipo" type="f1a62948:ProjectNode" />
+-              </path>
+-            </expand>
+-            <select />
+-          </tree_state>
+-        </projects_view>
+-      </state>
+-    </system>
+-  </component>
+-  <component name="Git.Settings">
+-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+-  </component>
+-  <component name="ProjectId" id="1tY7jv8sqvpsa2hM51yaDRfjRdS" />
+-  <component name="ProjectViewState">
+-    <option name="hideEmptyMiddlePackages" value="true" />
+-    <option name="showLibraryContents" value="true" />
+-  </component>
+-  <component name="PropertiesComponent">
+-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+-    <property name="WebServerToolWindowFactoryState" value="false" />
+-    <property name="aspect.path.notification.shown" value="true" />
+-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+-    <property name="nodejs_package_manager_path" value="npm" />
+-  </component>
+-  <component name="RunAnythingCache">
+-    <option name="myCommands">
+-      <command value="gradle " />
+-    </option>
+-  </component>
+-  <component name="RecentsManager">
+-    <key name="MoveFile.RECENT_KEYS">
+-      <recent name="C:\Users\gonza\OneDrive\Documents\GitHub\Mortal-Fighter\src\main\java" />
+-    </key>
+-  </component>
+-  <component name="RunManager" selected="Application.Unnamed">
+-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+-      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+-      <option name="MAIN_CLASS_NAME" value="App" />
+-      <module name="Prototipo.main" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration name="Mortal-Fighter" type="GradleRunConfiguration" factoryName="Gradle">
+-      <ExternalSystemSettings>
+-        <option name="executionName" />
+-        <option name="externalProjectPath" value="" />
+-        <option name="externalSystemIdString" value="GRADLE" />
+-        <option name="scriptParameters" value="" />
+-        <option name="taskDescriptions">
+-          <list />
+-        </option>
+-        <option name="taskNames">
+-          <list />
+-        </option>
+-        <option name="vmOptions" value="" />
+-      </ExternalSystemSettings>
+-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+-      <DebugAllEnabled>false</DebugAllEnabled>
+-      <method v="2" />
+-    </configuration>
+-    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+-      <ExternalSystemSettings>
+-        <option name="executionName" />
+-        <option name="externalProjectPath" value="" />
+-        <option name="externalSystemIdString" value="GRADLE" />
+-        <option name="scriptParameters" value="" />
+-        <option name="taskDescriptions">
+-          <list />
+-        </option>
+-        <option name="taskNames">
+-          <list />
+-        </option>
+-        <option name="vmOptions" value="" />
+-      </ExternalSystemSettings>
+-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+-      <DebugAllEnabled>false</DebugAllEnabled>
+-      <method v="2" />
+-    </configuration>
+-    <configuration default="true" type="JetRunConfigurationType">
+-      <module name="Prototipo" />
+-      <option name="VM_PARAMETERS" />
+-      <option name="PROGRAM_PARAMETERS" />
+-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+-      <option name="ALTERNATIVE_JRE_PATH" />
+-      <option name="PASS_PARENT_ENVS" value="true" />
+-      <option name="MAIN_CLASS_NAME" />
+-      <option name="WORKING_DIRECTORY" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+-      <module name="Prototipo" />
+-      <option name="filePath" />
+-      <option name="vmParameters" />
+-      <option name="alternativeJrePath" />
+-      <option name="programParameters" />
+-      <option name="passParentEnvs" value="true" />
+-      <option name="workingDirectory" />
+-      <option name="isAlternativeJrePathEnabled" value="false" />
+-      <option name="VM_PARAMETERS" />
+-      <option name="PROGRAM_PARAMETERS" />
+-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+-      <option name="ALTERNATIVE_JRE_PATH" />
+-      <option name="PASS_PARENT_ENVS" value="true" />
+-      <option name="MAIN_CLASS_NAME" />
+-      <option name="WORKING_DIRECTORY" />
+-      <option name="filePath" />
+-      <option name="vmParameters" />
+-      <option name="alternativeJrePath" />
+-      <option name="programParameters" />
+-      <option name="passParentEnvs" value="true" />
+-      <option name="workingDirectory" />
+-      <option name="isAlternativeJrePathEnabled" value="false" />
+-      <option name="VM_PARAMETERS" />
+-      <option name="PROGRAM_PARAMETERS" />
+-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+-      <option name="ALTERNATIVE_JRE_PATH" />
+-      <option name="PASS_PARENT_ENVS" value="true" />
+-      <option name="MAIN_CLASS_NAME" />
+-      <option name="WORKING_DIRECTORY" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <list>
+-      <item itemvalue="Application.Unnamed" />
+-      <item itemvalue="Gradle.Mortal-Fighter" />
+-    </list>
+-  </component>
+-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+-  <component name="TaskManager">
+-    <task active="true" id="Default" summary="Default task">
+-      <changelist id="e7389fc4-4a1d-498f-83d3-29ef83d8541d" name="Default Changelist" comment="" />
+-      <created>1622934310799</created>
+-      <option name="number" value="Default" />
+-      <option name="presentableId" value="Default" />
+-      <updated>1622934310799</updated>
+-      <workItem from="1622934314870" duration="157000" />
+-      <workItem from="1622934514157" duration="53000" />
+-<<<<<<< Updated upstream
+-      <workItem from="1622935065685" duration="951000" />
+-=======
+-      <workItem from="1622935065685" duration="160000" />
+-      <workItem from="1623103171066" duration="1621000" />
+-      <workItem from="1623168889111" duration="1847000" />
+->>>>>>> Stashed changes
+-    </task>
+-    <servers />
+-  </component>
+-  <component name="TypeScriptGeneratedFilesManager">
+-    <option name="version" value="3" />
+-  </component>
+-  <component name="Vcs.Log.Tabs.Properties">
+-    <option name="TAB_STATES">
+-      <map>
+-        <entry key="MAIN">
+-          <value>
+-            <State />
+-          </value>
+-        </entry>
+-      </map>
+-    </option>
+-    <option name="oldMeFiltersMigrated" value="true" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"jbr-11\" project-jdk-type=\"JavaSDK\" />\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 9acceae01bd89b66e66ceef303c11319bf930822)
++++ b/.idea/misc.xml	(date 1623599895318)
+@@ -1,4 +1,4 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" project-jdk-name="jbr-11" project-jdk-type="JavaSDK" />
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="16" project-jdk-type="JavaSDK" />
+ </project>
+\ No newline at end of file
+Index: .idea/Mortal-Fighter.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"JAVA_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\" inherit-compiler-output=\"true\">\r\n    <exclude-output />\r\n    <content url=\"file://$MODULE_DIR$\" />\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/Mortal-Fighter.iml b/.idea/Mortal-Fighter.iml
+--- a/.idea/Mortal-Fighter.iml	(revision 9acceae01bd89b66e66ceef303c11319bf930822)
++++ b/.idea/Mortal-Fighter.iml	(date 1623599893962)
+@@ -5,5 +5,6 @@
+     <content url="file://$MODULE_DIR$" />
+     <orderEntry type="inheritedJdk" />
+     <orderEntry type="sourceFolder" forTests="false" />
++    <orderEntry type="library" exported="" name="lib" level="project" />
+   </component>
+ </module>
+\ No newline at end of file
+Index: src/main/java/Aries.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Aries.java b/src/main/java/Aries.java
+new file mode 100644
+--- /dev/null	(date 1623605518077)
++++ b/src/main/java/Aries.java	(date 1623605518077)
+@@ -0,0 +1,39 @@
++
++import javafx.scene.image.Image;
++
++public class Aries extends Personaje{
++
++    private Image AnimEstable;
++    private Image AnimDespR;
++    private Image AnimDespL;
++    private Image AnimTrompada;
++    private Image AnimSalto;
++
++
++    boolean Orientacion;
++    boolean L=false, R=true;
++
++    public Aries(Coordenadas coordenadas, Color color, Orientacion) {
++        super(coordenadas, color);
++        this.setAnimaciones(Orientacion);
++        this.setdañoAtaque=20;
++    }
++
++    private setAnimaciones(boolean Orientacion){
++        if (Orientacion==L){
++            AnimEstable = new Image ("Stance.gif");
++            AnimDespR = new Image ("Foward.gif");
++            AnimDespL = new Image ("Backwards.gif");
++            AnimSalto = new Image ("Jump.gif");
++            AnimTrompada = new Image ("Punch.gif");
++        }
++        else{
++            AnimEstable = new Image ("StanceR.gif");
++            AnimDespR = new Image ("FowardR.gif");
++            AnimDespL = new Image ("BackwardsR.gif");
++            AnimSalto = new Image ("JumpR.gif");
++            AnimTrompada = new Image ("PunchR.gif")
++        }
++    }
++
++}
+\ No newline at end of file

@@ -11,6 +11,7 @@ public class Personaje {
     private Coordenadas coordenadas;
     int xa = 0;
     int life;
+    protected int dañoAtaque;
     Color color;
 
     public Personaje(Coordenadas coordenadas, Color color){
