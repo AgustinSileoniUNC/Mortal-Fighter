@@ -35,6 +35,10 @@ public class ControladorInput implements EventHandler<KeyEvent> {
                     enviarMoviminto(new Atacar());
                 }
                 break;
+            case D:
+                if(bool){
+                    enviarMoviminto(new Desplazar());
+                }
         }
     }
 

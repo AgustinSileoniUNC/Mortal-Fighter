@@ -1,17 +1,18 @@
 import java.util.ArrayList;
 
 public class Atacar implements Accion{
-
-    public ArrayList<Jugador> ejecutar(Jugador player1, Jugador player2){
+    
+    //Esta implementado para el jugador 1, deberia ver como hacerlo para los dos. Mi idea es poner golpeador y golpeado y dependiendo del boron el orden en el que los coloco
+    public ArrayList<Jugador> ejecutar(Jugador golpeador, Jugador golpeado){
         ArrayList<Jugador> arrayList = new ArrayList<Jugador>();
-        player1.x+=10;
-        if(player1.verificarColision(player2)){
-            player2.recibirGolpe(10);
+        golpeador.x+=1;
+        if(golpeador.verificarColision(golpeado)){
+            golpeado.recibirGolpe(10);
         }
-        player1.x -=10;
+        golpeador.x -=1;
 
-        arrayList.add(player1);
-        arrayList.add(player2);
+        arrayList.add(golpeador);
+        arrayList.add(golpeado);
             return arrayList;
     }
 

@@ -55,7 +55,7 @@ public class Ventana extends Application {
             @Override
             public void handle(long now) {
                 System.out.println(escenario.jugadores.get(1).vida);
-                vistaPelea.setCoordenadas(escenario.jugadores.get(0));
+                vistaPelea.setCoordenadas(escenario.jugadores);
                 vistaPelea.pintar();
             }
         };
@@ -68,7 +68,7 @@ public class Ventana extends Application {
         vistaPelea = new VistaPelea();
         vistaSeleccion = new VistaSeleccion();
         escenario = new Escenario();
-        vistaPelea.setCoordenadas(escenario.jugadores.get(0));
+        vistaPelea.setCoordenadas(escenario.jugadores);
         vistaPelea.inicializar();
         gestioEventos();
 

@@ -11,7 +11,7 @@ public class Escenario implements Sujeto {
         jugadores.add(new Jugador(300,200,"CuerpoInverso.png"));
     }
 
-
+    //Ejecuta la accion que le haya pasado el Controlador
     public void ejecutarAccion(Accion accion){
         jugadores = accion.ejecutar(jugadores.get(0),jugadores.get(1));
 
@@ -34,7 +34,7 @@ public class Escenario implements Sujeto {
     @Override
     public void notificar() {
         for(Observador observador:observers){
-            observador.actualizar();
+            observador.actualizar(jugadores.get(0).vida,jugadores.get(1).vida);
         }
     }
 }

@@ -1,5 +1,5 @@
 public interface Observador {
 
-    public void actualizar();
+    public void actualizar(int vidap1,int vidap2);
 
 }
