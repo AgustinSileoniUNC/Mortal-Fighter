@@ -1,90 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="Mortal-Fighter-1.0.1:jar" />
-    </artifacts-to-build>
-  </component>
+
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e67c6bf-83c3-4de0-8438-eb5612f2d10e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries-with-intellij-classes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Mortal-Fighter.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Canvas$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Canvas.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Controlador.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Escenario.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Escenario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/InputsController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/InputsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Modelo/Coordenadas.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Modelo/Movimiento.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Modelo/VistaPrincipal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MoverseDerecha.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MoverseIzquierda.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Personaje.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Saltar.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Saltar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Trompada.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/VentanaPrincipal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Accion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Accion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Atacar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Atacar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Canvas.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ControladorInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ControladorInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coordenadas.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Desplazamiento.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Desplazar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Escenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Escenario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Estadistica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Estadistica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InputsController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Jugador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MoverseDerecha.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Observador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Observador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Personaje.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Saltar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Saltar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sujeto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sujeto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Trompada.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Ventana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Ventana.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/VentanaPrincipal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VentanaPrincipal.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/VentanaPrincipal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/VistaPelea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VistaPelea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/VistaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VistaPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/VistaSeleccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VistaSeleccion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Cuerpo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/CuerpoInverso.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Frames/Frame0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Frames/Frame1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Frames/Frame2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Frames/Frame3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Frames/Frame4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Frames/Frame5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Frames/Frame6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Frames/Frame7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fondoSeleccion.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mortal.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/personaje1Cuerpo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/personaje3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/personaje4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/personaje5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/personaje6.jpg" beforeDir="false" />
-    </list>
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,19 +16,12 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
+
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1u1AD5o0tsYzR2nnx2bIxP6Mux7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -117,174 +31,49 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\gonza\OneDrive\Documents\GitHub\Mortal-Fighter-1.0.1\src\main\resources" />
-      <recent name="C:\Users\gonza\OneDrive\Documents\GitHub\Mortal-Fighter-1.0.1\src\main\java" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.Mortal-Fighter-1">
-    <configuration name="Mortal-Fighter-1" type="Application" factoryName="Application">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Ventana" />
+
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Mortal-Fighter-1.0.1 [fatJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
-          <list>
-            <option value="fatJar" />
-          </list>
-        </option>
-        <option name="vmOptions" />
+
       </ExternalSystemSettings>
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Mortal-Fighter-1.0.1 [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
-          <list>
-            <option value="test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Pruebas" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;Pruebas&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="Pruebas.name" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;Pruebas.name&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="Pruebas.nametest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;Pruebas.nametest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Application.Mortal-Fighter-1" />
-      <item itemvalue="Gradle.Mortal-Fighter-1.0.1 [fatJar]" />
-      <item itemvalue="Gradle.Pruebas.name" />
-      <item itemvalue="Gradle.Pruebas.nametest" />
-      <item itemvalue="Gradle.Pruebas" />
-      <item itemvalue="Gradle.Mortal-Fighter-1.0.1 [test]" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Gradle.Mortal-Fighter-1.0.1 [test]" />
-        <item itemvalue="Gradle.Mortal-Fighter-1.0.1 [fatJar]" />
-        <item itemvalue="Gradle.Pruebas" />
-        <item itemvalue="Gradle.Pruebas.nametest" />
-        <item itemvalue="Gradle.Pruebas.name" />
-      </list>
-    </recent_temporary>
+
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8e67c6bf-83c3-4de0-8438-eb5612f2d10e" name="Default Changelist" comment="" />
-      <created>1623822600828</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1623822600828</updated>
-      <workItem from="1623822602308" duration="3900000" />
-      <workItem from="1623826668614" duration="3596000" />
-      <workItem from="1623873362646" duration="1900000" />
-      <workItem from="1623882168935" duration="22248000" />
-      <workItem from="1623946336602" duration="3677000" />
     </task>
     <servers />
   </component>
