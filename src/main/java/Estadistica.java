@@ -1,6 +1,8 @@
 public class Estadistica {
-    public int golpesRealizados=0;
-    public int golpesAcertados =0;
+    public float golpesRealizados = 0;
+    public float golpesAcertados = 0;
+
+    public Estadistica(){}
 
     public void golpe(boolean acertado){
         golpesRealizados ++;
@@ -10,14 +12,16 @@ public class Estadistica {
     }
 
     public int getGolpesRealizados(){
-        return golpesRealizados;
+        return (int) golpesRealizados;
     }
-    public int porcentajeGolpesAcertados(){
+
+    public int PorcentajeGolpesAcertados(){
         if(golpesRealizados>0){
-            return golpesAcertados/golpesRealizados;
+            return (int) ((golpesAcertados/golpesRealizados)*100);
         }
         return 0;
     }
 
+    public void reiniciar(){golpesRealizados=0;golpesAcertados=0;}
 
 }

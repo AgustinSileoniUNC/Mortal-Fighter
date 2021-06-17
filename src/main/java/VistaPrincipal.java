@@ -1,30 +1,37 @@
-import javafx.geometry.Insets;
+import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.GridPane;
-import java.net.URL;
 
 public class VistaPrincipal {
 
     Scene scene ;
-    Button  buttonPelea;
-    Button  buttonSalir;
-    GridPane gridPane;
+    Button  buttonPelea,buttonSalir;
+    ImageView fondo;
+    Group group;
 
     VistaPrincipal(){
-        buttonPelea = new Button("Pelea");
-        buttonSalir = new Button(" Salir ");
-        gridPane = new GridPane();
-        gridPane.setPadding(new Insets(0,120,0,120));
-        gridPane.setVgap(10);
-        gridPane.setHgap(10);
-        GridPane.setConstraints(buttonPelea,0,8);
-        GridPane.setConstraints(buttonSalir,0,15);
-        gridPane.getChildren().addAll(buttonPelea, buttonSalir);
-        scene = new Scene(gridPane,300,300);
+        group = new Group();
+        scene = new Scene(group,500,300);
+        buttonPelea = new Button();
+        buttonSalir = new Button();
+        buttonSalir.setGraphic(new ImageView("Salir.png"));
+        buttonPelea.setGraphic(new ImageView("NuevaPartida.png"));
+        fondo = new ImageView();
+        fondo.setImage(new Image("Pantalla1.png"));
+
+        buttonPelea.setLayoutX(70);
+        buttonPelea.setLayoutY(160);
+        buttonPelea.setStyle("-fx-background-color: rgba(143,179,222,0)");
+        buttonSalir.setLayoutX(165);
+        buttonSalir.setLayoutY(240);
+        buttonSalir.setStyle("-fx-background-color: rgba(143,179,222,0)");
+
+
+        group.getChildren().addAll(fondo,buttonPelea,buttonSalir);
     }
+
 
     public Scene getScene(){
         return scene;

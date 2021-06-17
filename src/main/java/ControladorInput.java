@@ -17,14 +17,14 @@ public class ControladorInput implements EventHandler<KeyEvent> {
             case RIGHT:
                 //Para que no se mueva si tiene la tecla apretada
                 if(bool){
-                    enviarMoviminto(new Desplazar());
-                    //bool =false;
+                    enviarMovimiento(new DesplazarDerecha(1));
+                     bool =false;
                 }
                 break;
             case LEFT:
                 if(bool){
-                    escenario.jugadores.get(0).x -= 1;
-                    bool =false;
+                    enviarMovimiento(new DesplazarIzquierda(1));
+                     bool =false;
                 }
                 break;
             case UP:
@@ -32,18 +32,35 @@ public class ControladorInput implements EventHandler<KeyEvent> {
                 break;
             case NUMPAD0:
                 if(bool){
-                    enviarMoviminto(new Atacar());
+                    enviarMovimiento(new Atacar(1));
                 }
                 break;
             case D:
+                //Para que no se mueva si tiene la tecla apretada
                 if(bool){
-                    enviarMoviminto(new Desplazar());
+                    enviarMovimiento(new DesplazarDerecha(0));
+                     bool =false;
                 }
+                break;
+            case A:
+                if(bool){
+                    enviarMovimiento(new DesplazarIzquierda(0));
+                     bool =false;
+                }
+                break;
+            case W:
+                //Crear saltar
+                break;
+            case SPACE:
+                if(bool){
+                    enviarMovimiento(new Atacar(0));
+                }
+                break;
         }
     }
 
 
-    public void enviarMoviminto(Accion accion){
+    public void enviarMovimiento(Accion accion){
         escenario.ejecutarAccion(accion);
     }
 }

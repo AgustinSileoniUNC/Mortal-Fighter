@@ -1,44 +1,68 @@
-import javafx.geometry.Insets;
+import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
+import javafx.scene.text.Text;
 
 public class VistaSeleccion {
 
     Scene scene ;
-    Button personaje1;
-    Button personaje2;
-    Button personaje3;
-    Button personaje4;
-    Button personaje5;
-    Button personaje6;
-    GridPane gridPane;
-    ImageView fondo;
+    Button personaje1,personaje2,aceptar;
+    ImageView fondo,seleccion;
+    TextField nombreP1,nombreP2;
+    Group group;
 
     VistaSeleccion(){
-        fondo = new ImageView("fondoSeleccion.jpg");
+        //Inicializa lo necesario para crear la ventana y poder graficar
+        group = new Group();
+        scene =  new Scene(group,550,400);
+        //Inicializacion de los elementos en la ventana
         personaje1 = new Button();
         personaje2 = new Button();
-        personaje3 = new Button();
-        personaje4 = new Button();
-        personaje5 = new Button();
-        personaje6 = new Button();
-        colocarImagenButton();
-        gridPane = new GridPane();
-        gridPane.setPadding(new Insets(0,75,0,75));
-        gridPane.setVgap(10);
-        gridPane.setHgap(10);
-        GridPane.setConstraints(personaje1,0,5);
-        GridPane.setConstraints(personaje2,5,5);
-        GridPane.setConstraints(personaje3,10,5);
-        GridPane.setConstraints(personaje4,0,10);
-        GridPane.setConstraints(personaje5,5,10);
-        GridPane.setConstraints(personaje6,10,10);
+        aceptar = new Button();
+        nombreP1 = new TextField();
+        nombreP2 = new TextField();
+        seleccion = new ImageView(new Image("SelecP1.png"));
+        seleccion.setX(140);
+        seleccion.setY(300);
+        fondo = new ImageView();
+        fondo.setImage(new Image("fondoSeleccion.gif"));
+        //Configuración boton personaje2
 
-        gridPane.getChildren().addAll(personaje1,personaje2,personaje3,personaje4,personaje5,personaje6);
-        scene =  new Scene(gridPane,600,600);
+
+        //Configuración boton aceptar
+        aceptar.setMinSize(115,60);
+        aceptar.setMaxSize(10,60);
+        aceptar.setLayoutX(210);
+        aceptar.setLayoutY(180);
+
+        //Configuración TextField nombreP1
+        nombreP1.setPromptText("Ingresar Nombre 1");
+        nombreP1.setMinSize(170,60);
+        nombreP1.setMaxSize(170,60);
+        nombreP1.setLayoutY(180);
+        nombreP1.setLayoutX(5);
+
+        //Configuración TextField nombreP2
+        nombreP2.setPromptText("Ingresar Nombre 2");
+        nombreP2.setMinSize(170,60);
+        nombreP2.setMaxSize(170,60);
+        nombreP2.setLayoutX(370);
+        nombreP2.setLayoutY(175);
+
+
+        colocarImagenButton();
+
+
+        group.getChildren().addAll(fondo,personaje1,personaje2,nombreP1,nombreP2,aceptar,seleccion);
+
+    }
+
+    public void cambiarTextoJugador(String linkImagen) {
+        seleccion.setImage(new Image(linkImagen));
     }
 
     public Scene getScene(){
@@ -51,19 +75,19 @@ public class VistaSeleccion {
         return personaje2;
     }
     private void colocarImagenButton(){
-         Image imagePJ1 = new Image("personaje1.jpg",100,100,false,true);
-         Image imagePJ2 = new Image("personaje2.jpg",100,100,false,true);
-         Image imagePJ3 = new Image("personaje3.jpg",100,100,false,true);
-         Image imagePJ4 = new Image("personaje4.jpg",100,100,false,true);
-         Image imagePJ5 = new Image("personaje5.jpg",100,100,false,true);
-         Image imagePJ6 = new Image("personaje6.jpg",100,100,false,true);
-         personaje1.setGraphic(new ImageView(imagePJ1));
-         personaje2.setGraphic(new ImageView(imagePJ2));
-         personaje3.setGraphic(new ImageView(imagePJ3));
-         personaje4.setGraphic(new ImageView(imagePJ4));
-         personaje5.setGraphic(new ImageView(imagePJ5));
-         personaje6.setGraphic(new ImageView(imagePJ6));
+        Image imagePJ1 = new Image("Aries.png",170,170,false,true);
+        Image imagePJ2 = new Image("Kratos.png",170,170,false,true);
+        Image imageAceptar = new Image("Jugar.png",115,60,false,true);
+        personaje1.setGraphic(new ImageView(imagePJ1));
+        personaje2.setGraphic(new ImageView(imagePJ2));
+        aceptar.setGraphic(new ImageView(imageAceptar));
+        personaje2.setLayoutX(370);
+
+        personaje1.setStyle("-fx-background-color: rgba(250,250,250,0)");
+        personaje2.setStyle("-fx-background-color:rgba(250,250,250,0)");
+        aceptar.setStyle("-fx-background-color: rgba(250,250,250,0)");
 
     }
+
 
 }
