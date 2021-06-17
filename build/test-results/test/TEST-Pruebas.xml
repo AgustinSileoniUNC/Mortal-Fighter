@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Pruebas" tests="12" skipped="0" failures="0" errors="0" timestamp="2021-06-17T19:45:58" hostname="DESKTOP-BV7EHUN" time="0.07">
+  <properties/>
+  <testcase name="Prueba ataque no efectivo" classname="Pruebas" time="0.041"/>
+  <testcase name="Prueba desplazar derecha jugador 1" classname="Pruebas" time="0.008"/>
+  <testcase name="Prueba desplazar derecha jugador 2" classname="Pruebas" time="0.0"/>
+  <testcase name="Prueba desplazar izquierda ilegal jugador 1" classname="Pruebas" time="0.002"/>
+  <testcase name="Prueba desplazar izquierda ilegal jugador 2" classname="Pruebas" time="0.001"/>
+  <testcase name="Prueba ingreso ilegal de nombre" classname="Pruebas" time="0.008"/>
+  <testcase name="Prueba ataque efectivo" classname="Pruebas" time="0.001"/>
+  <testcase name="Prueba desplazar izquierda jugador 1" classname="Pruebas" time="0.001"/>
+  <testcase name="Prueba desplazar izquierda jugador 2" classname="Pruebas" time="0.001"/>
+  <testcase name="Prueba ingreso de nombre" classname="Pruebas" time="0.0"/>
+  <testcase name="Prueba desplazar derecha ilegal jugador 1" classname="Pruebas" time="0.0"/>
+  <testcase name="Prueba desplazar derecha ilegal jugador 2" classname="Pruebas" time="0.0"/>
+  <system-out><![CDATA[10
+510
+90
+490
+531
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
