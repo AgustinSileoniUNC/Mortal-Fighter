@@ -1,49 +1,39 @@
 Sujeto.java
  Sujeto
-Estadistica.java
- Estadistica
-VistaSeleccion.java
- VistaSeleccion
-BarraEstado.java
- BarraEstado
-Observador.java
- Observador
-VentanaEstadisticas.java
- VentanaEstadisticas
-DesplazarDerecha.java
- DesplazarDerecha
-Temporizador.java
- Temporizador
- Temporizador$1
-Animacion.java
- Animacion
 Accion.java
  Accion
-Reniciar.java
- Reniciar
-Escenario.java
- Escenario
-Jugador.java
- Jugador
-ControladorInput.java
- ControladorInput
- ControladorInput$1
-DesplazarIzquierda.java
- DesplazarIzquierda
-Saltar.java
- Saltar
-Atacar.java
- Atacar
-VistaPrincipal.java
- VistaPrincipal
-CambioAnimacion.java
- CambioAnimacion
 Ventana.java
  Ventana
  Ventana$1
  Ventana$2
- Ventana$3
+Jugador.java
+ Jugador
+VistaPrincipal.java
+ VistaPrincipal
+Atacar.java
+ Atacar
+DesplazarDerecha.java
+ DesplazarDerecha
+Estadistica.java
+ Estadistica
+Saltar.java
+ Saltar
+DesplazarIzquierda.java
+ DesplazarIzquierda
+ControladorInput.java
+ ControladorInput
+ ControladorInput$1
+Animacion.java
+ Animacion
+Observador.java
+ Observador
 VistaPelea.java
  VistaPelea
-Cronometro.java
- Cronometro
+VentanaEstadisticas.java
+ VentanaEstadisticas
+ VentanaEstadisticas$1
+ VentanaEstadisticas$2
+Escenario.java
+ Escenario
+VistaSeleccion.java
+ VistaSeleccion
