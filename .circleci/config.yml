@@ -46,6 +46,3 @@ jobs:
        
       - store_test_results:
           path: build/test-results/test
-      - store_artifacts:
-          path: build/test-results/test
-          when: always
